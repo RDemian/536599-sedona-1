@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Sedona</title>
+</head>
+
+<body>
+  <nav class="site-nav">
+    <div class="site-nav__item"><a class="site-nav__link" href="">Главная</a></div>
+    <div class="site-nav__item"><a class="site-nav__link" href="">Фото и видео</a></div>
+    <div class="site-nav__item"><a class="site-nav__link" href="">Форма отзыва</a></div>
+    <div class="site-nav__item"><a class="site-nav__link" href="https://htmlacademy.ru/intensive/adaptive">Html academy</a></div>
+  </nav>
+  <header class="page-header">
+    <a class="main-logo" href="index.html">Логотип
+        <img class="main-logo__img" src="img/main-logo.png" width="138" height="70" alt="Седона логотип">
+      </a>
+    <button class="menu-btn">Показать меню</button>
+  </header>
+  <section class="banner banner_photo-page">
+    <h2 class="visible-hidden">Добро пожаловать в Седону</h2>
+    <div class="banner__description"></div>
+  </section>
+  <main class="page-main">
+    <h1 class="visible-hidden">Фото Седоны</h1>
+    <section class="introduce">
+      <h2 class="introduce__title">Фото и видео</h2>
+      <p class="introduce__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+    </section>
+    <form action="https://echo.htmlacademy.ru" class="feedback" method="post">
+      <div class="fio">
+        <h3 class="fio__title">Представьтесь</h3>
+        <input type="text" class="fio__name" required placeholder="Петр">
+        <label class="fio__name-label" for="fio__name">Имя*:</label>
+        <input type="text" class="fio__surname" required placeholder="Иванов">
+        <label class="fio__surname-label" for="fio__surname">Фамилия*:</label>
+        <input type="text" class="fio__patronym" placeholder="Александрович">
+        <label class="fio__patronym-label" for="fio__patroname">Отчество:</label>
+      </div>
+      <div class="contacts">
+        <h3 class="contacts__title">Контактная информация</h3>
+        <input type="tel" class="contacts__phone" required placeholder="Введите телефон">
+        <label class="contacts__phone-label" for="contacts__phone">Контактный телефон*:</label>
+        <input type="email" class="contacts__email" required placeholder="Введите e-mail">
+        <label class="contacts__email-label" for="contacts__phone">Электронная почта*:</label>
+      </div>
+      <div class="impression">
+        <h3 class="impressions__title">Ваше общее впечатление:</h3>
+        <input type="radio" class="impression__value" id="impression-positive" name="impression" value="positive" checked>
+        <label for="impression-positive">Скорее положительное</label>
+        <input type="radio" class="impression__value" id="impression-negative" name="impression" value="negative">
+        <label for="impression-negative">Скорее отрицательное</label>
+        <input type="radio" class="impression__value" id="impression-indefinite" name="impression" value="indefinite">
+        <label for="impression-indefinite">Затрудняюсь ответить</label>
+      </div>
+      <div class="visited-place">
+        <h3 class="visited-place__title">Посещенные достопримечательности:</h3>
+        <input type="checkbox" class="visited-place__check" id="devil-check" checked>
+        <label for="devil-check">Мост Дьявола</label>
+
+        <input type="checkbox" class="visited-place__check" id="bell-check" checked>
+        <label for="bell-check">Гора-Колокол</label>
+
+        <input type="checkbox" class="visited-place__check" id="slide-check" checked>
+        <label for="slide-check">Слайд-парк</label>
+
+        <input type="checkbox" class="visited-place__check" id="red-check">
+        <label for="red-check">Красные скалы</label>
+      </div>
+      <div class="emotions">
+        <h3 class="emotions__title">Опишите свои эмоции:</h3>
+        <textarea class="emotions__text" rows="6" placeholder="Опишите подробно все свои восторги"></textarea>
+      </div>
+      <button type="submit" class="feedback__btn">Отпрвить отзыв</button>
+    </form>
+  </main>
+  <footer class="main-footer">
+    <div class="hashtag-sedona">#Visitsedona</div>
+    <div class="social-buttons">
+      <a class="social-btn" href="#1"><img src="img/twitter.png" width="17" height="15" alt="twitter">twitter</a>
+      <a class="social-btn" href="#1"><img src="img/fb-icon.png" width="12" height="22" alt="facebook">facebook</a>
+      <a class="social-btn" href="#1"><img src="img/youtube.png" width="20" height="16" alt="youtube">youtube</a>
+    </div>
+    <div class="copyright">
+      <span class="copyright__text">Разработано</span>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">htmlacademy.ru</a>
+    </div>
+  </footer>
+</body>
+
+</html>
