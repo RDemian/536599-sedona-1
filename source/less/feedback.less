@@ -1,0 +1,203 @@
+.feedback {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+}
+
+.feedback__item {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.feedback__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.feedback__list-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.feedback__title {
+  border-top: 1px solid #e5e5e5;
+  padding-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.feedback__input {
+  height: 58px;
+  padding-left: 20px;
+  background-color: #f2f2f2;
+  .no-outline();
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.feedback__label--fio {
+  margin-right: 15px;
+}
+
+.feedback__input--fio {
+  margin-left: auto;
+  flex-grow: 1;
+}
+
+.feedback__label--contacts {
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+.feedback__list-item--contacts {
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+/*Как можно ещё реализовать картинку в инпуте?       */
+.feedback__input--phone {
+  background: url("../img/icon-phone.svg") no-repeat;
+  background-color: #f2f2f2;
+  background-position: right 20px center;
+  box-shadow: inset -58px 0 0 0 rgba(0,0,0,0.05);
+}
+
+.feedback__input--email {
+  background: url("../img/icon-mail.svg") no-repeat;
+  background-color: #f2f2f2;
+  background-position: right 20px center;
+  box-shadow: inset -58px 0 0 0 rgba(0,0,0,0.05);
+}
+
+/*Радио*/
+.feedback__radio {
+  /*visibility: hidden;*/
+  position: absolute;
+  opacity: 0;
+}
+
+.feedback__label--radio {
+  position: relative;
+  margin-bottom: 55px;
+  margin-left: 80px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  text-transform: none;
+  cursor: pointer;
+}
+/*Способ выравнивания относительно лейбла?*/
+.feedback__label--radio::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 13px;
+  transform: translateY(-50%);
+  left: -80px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: #f2f2f2;
+}
+
+.feedback__radio:checked+.feedback__label--radio::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 13px;
+  transform: translateY(-50%);
+  left: Calc(-80px+17px);
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: #000000;
+}
+
+.feedback__radio:hover+.feedback__label--radio::before {
+  background-color: #e5e5e5;
+}
+
+.feedback__radio:active+.feedback__label--radio::before {
+  background-color: #d5d5d5;
+}
+
+/*Чекбокс*/
+/*Как скрыть checkbox чтобы он остался доступным при обходе по tab*/
+.feedback__check {
+  /*visibility: hidden;*/
+  position: absolute;
+  opacity: 0;
+}
+
+.feedback__label--check {
+  position: relative;
+  margin-bottom: 55px;
+  margin-left: 80px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  text-transform: none;
+  cursor: pointer;
+}
+/*Способ выравнивания относительно лейбла?*/
+.feedback__label--check::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 13px;
+  transform: translateY(-50%);
+  left: -80px;
+  width: 56px;
+  height: 56px;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+}
+
+.feedback__check:checked+.feedback__label--check::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  background: url("../img/icon-tick.svg") no-repeat;
+  top: 13px;
+  transform: translateY(-50%);
+  left: Calc(-80px+17px);
+  width: 24px;
+  height: 17px;
+}
+
+.feedback__check:hover+.feedback__label--check::before {
+  background-color: #e5e5e5;
+}
+
+.feedback__check:active+.feedback__label--check::before {
+  background-color: #d5d5d5;
+}
+
+.feedback__textarea {
+  width: 100%;
+  background-color: #f2f2f2;
+  border: none;
+  padding: 20px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  text-transform: none;
+  margin-bottom: 50px;
+}
+
+.feedback__btn {
+  margin-bottom: 35px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
