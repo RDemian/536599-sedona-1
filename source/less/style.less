@@ -1,0 +1,67 @@
+@body-color: #ffffff;
+@button-color: #81b3d2;
+@button-font-color: #ffffff;
+@font-color: #000000;
+@tablet-width: 768px;
+@desktop-width: 1200px;
+@block-min-width: 320px;
+
+/* Файл mixins.less */
+.no-outline() {
+  border: none;
+  outline: none;
+}
+
+html {
+  box-sizing: border-box;
+  min-width: @block-min-width;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: @body-color;
+  margin: 0;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: @font-color;
+  /*min-width: 320px;*/
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visible-hidden {
+  display: none;
+}
+
+@import "page-header";
+@import "main-logo";
+@import "site-nav";
+@import "menu-btn";
+@import "banner";
+/* Main */
+@import "page-main";
+@import "introduce";
+@import "structur-block";
+@import "inform";
+@import "btn";
+@import "map";
+@import "main-footer";
+@import "hashtag-sedona";
+@import "social-buttons";
+@import "social-btn";
+@import "copyright";
+/*страница photo*/
+@import "photo-block";
+@import "video-pleer";
+/*Стилизация страницы form*/
+@import "feedback";
