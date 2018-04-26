@@ -7,6 +7,7 @@
 @block-min-width: 320px;
 
 /* Файл mixins.less */
+
 .no-outline() {
   border: none;
   outline: none;
@@ -54,7 +55,7 @@ img {
 .main-logo {
   position: absolute;
   z-index: 10;
-  bottom: calc(55px-84px);
+  bottom: calc(55px - 84px);
   font-size: 0;
   align-self: center;
   line-height: 0;
@@ -69,7 +70,7 @@ img {
   background-color: @button-color;
   padding: 18px 0;
   text-align: center;
-  box-shadow: inset 0 1px 0 0 rgba(255,255,255,0.2), inset 0 -1px 0 0 rgba(0,0,0,0.2);
+  box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.2), inset 0 -1px 0 0 rgba(0, 0, 0, 0.2);
 }
 
 .site-nav__link {
@@ -106,9 +107,7 @@ img {
   display: flex;
   justify-content: center;
   background-color: @button-color;
-  background-image:
-    url("../img/intro-triangle.png"),
-    url("../img/bg-back-mobile@1x.jpg");
+  background-image: url("../img/intro-triangle.png"), url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center bottom, center bottom;
   background-size: auto, auto;
@@ -121,6 +120,7 @@ img {
 }
 
 /* Main */
+
 .page-main {
   display: flex;
   flex-direction: column;
@@ -204,7 +204,6 @@ img {
   text-align: left;
   width: 280px;
   min-height: 155px;
-
 }
 
 .inform--icon--house {
@@ -306,6 +305,7 @@ img {
 }
 
 /*страница photo*/
+
 .banner--mini {
   min-height: 160px;
 }
@@ -369,7 +369,7 @@ img {
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  background-color: rgba(0,0,0,0.6);
+  background-color: rgba(0, 0, 0, 0.6);
   width: 280px;
   height: 45px;
 }
@@ -379,7 +379,7 @@ img {
   display: block;
   width: 240px;
   height: 3px;
-  background-color: rgba(255,255,255,0.2);
+  background-color: rgba(255, 255, 255, 0.2);
   margin: 21px auto;
   z-index: 10;
 }
@@ -430,6 +430,7 @@ img {
 
 
 /*Стилизация страницы form*/
+
 .feedback {
   display: flex;
   flex-direction: column;
@@ -496,21 +497,23 @@ img {
 }
 
 /*Как можно ещё реализовать картинку в инпуте?       */
+
 .feedback__input--phone {
   background: url("../img/icon-phone.svg") no-repeat;
   background-color: #f2f2f2;
   background-position: right 20px center;
-  box-shadow: inset -58px 0 0 0 rgba(0,0,0,0.05);
+  box-shadow: inset -58px 0 0 0 rgba(0, 0, 0, 0.05);
 }
 
 .feedback__input--email {
   background: url("../img/icon-mail.svg") no-repeat;
   background-color: #f2f2f2;
   background-position: right 20px center;
-  box-shadow: inset -58px 0 0 0 rgba(0,0,0,0.05);
+  box-shadow: inset -58px 0 0 0 rgba(0, 0, 0, 0.05);
 }
 
 /*Радио*/
+
 .feedback__radio {
   /*visibility: hidden;*/
   position: absolute;
@@ -527,7 +530,9 @@ img {
   text-transform: none;
   cursor: pointer;
 }
+
 /*Способ выравнивания относительно лейбла?*/
+
 .feedback__label--radio::before {
   content: "";
   display: inline-block;
@@ -541,29 +546,31 @@ img {
   background-color: #f2f2f2;
 }
 
-.feedback__radio:checked+.feedback__label--radio::after {
+.feedback__radio:checked + .feedback__label--radio::after {
   content: "";
   display: inline-block;
   position: absolute;
   top: 13px;
   transform: translateY(-50%);
-  left: Calc(-80px+17px);
+  left: calc(17px - 80px);
   width: 22px;
   height: 22px;
   border-radius: 50%;
   background-color: #000000;
 }
 
-.feedback__radio:hover+.feedback__label--radio::before {
+.feedback__radio:hover + .feedback__label--radio::before {
   background-color: #e5e5e5;
 }
 
-.feedback__radio:active+.feedback__label--radio::before {
+.feedback__radio:active + .feedback__label--radio::before {
   background-color: #d5d5d5;
 }
 
 /*Чекбокс*/
+
 /*Как скрыть checkbox чтобы он остался доступным при обходе по tab*/
+
 .feedback__check {
   /*visibility: hidden;*/
   position: absolute;
@@ -580,7 +587,9 @@ img {
   text-transform: none;
   cursor: pointer;
 }
+
 /*Способ выравнивания относительно лейбла?*/
+
 .feedback__label--check::before {
   content: "";
   display: inline-block;
@@ -594,23 +603,23 @@ img {
   background-color: #f2f2f2;
 }
 
-.feedback__check:checked+.feedback__label--check::after {
+.feedback__check:checked + .feedback__label--check::after {
   content: "";
   display: inline-block;
   position: absolute;
   background: url("../img/icon-tick.svg") no-repeat;
   top: 13px;
   transform: translateY(-50%);
-  left: Calc(-80px+17px);
+  left: calc(17px - 80px);
   width: 24px;
   height: 17px;
 }
 
-.feedback__check:hover+.feedback__label--check::before {
+.feedback__check:hover + .feedback__label--check::before {
   background-color: #e5e5e5;
 }
 
-.feedback__check:active+.feedback__label--check::before {
+.feedback__check:active + .feedback__label--check::before {
   background-color: #d5d5d5;
 }
 

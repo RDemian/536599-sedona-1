@@ -64,21 +64,23 @@
 }
 
 /*Как можно ещё реализовать картинку в инпуте?       */
+
 .feedback__input--phone {
   background: url("../img/icon-phone.svg") no-repeat;
   background-color: #f2f2f2;
   background-position: right 20px center;
-  box-shadow: inset -58px 0 0 0 rgba(0,0,0,0.05);
+  box-shadow: inset -58px 0 0 0 rgba(0, 0, 0, 0.05);
 }
 
 .feedback__input--email {
   background: url("../img/icon-mail.svg") no-repeat;
   background-color: #f2f2f2;
   background-position: right 20px center;
-  box-shadow: inset -58px 0 0 0 rgba(0,0,0,0.05);
+  box-shadow: inset -58px 0 0 0 rgba(0, 0, 0, 0.05);
 }
 
 /*Радио*/
+
 .feedback__radio {
   /*visibility: hidden;*/
   position: absolute;
@@ -95,7 +97,9 @@
   text-transform: none;
   cursor: pointer;
 }
+
 /*Способ выравнивания относительно лейбла?*/
+
 .feedback__label--radio::before {
   content: "";
   display: inline-block;
@@ -109,29 +113,31 @@
   background-color: #f2f2f2;
 }
 
-.feedback__radio:checked+.feedback__label--radio::after {
+.feedback__radio:checked + .feedback__label--radio::after {
   content: "";
   display: inline-block;
   position: absolute;
   top: 13px;
   transform: translateY(-50%);
-  left: Calc(-80px+17px);
+  left: calc(17px - 80px);
   width: 22px;
   height: 22px;
   border-radius: 50%;
   background-color: #000000;
 }
 
-.feedback__radio:hover+.feedback__label--radio::before {
+.feedback__radio:hover + .feedback__label--radio::before {
   background-color: #e5e5e5;
 }
 
-.feedback__radio:active+.feedback__label--radio::before {
+.feedback__radio:active + .feedback__label--radio::before {
   background-color: #d5d5d5;
 }
 
 /*Чекбокс*/
+
 /*Как скрыть checkbox чтобы он остался доступным при обходе по tab*/
+
 .feedback__check {
   /*visibility: hidden;*/
   position: absolute;
@@ -148,7 +154,9 @@
   text-transform: none;
   cursor: pointer;
 }
+
 /*Способ выравнивания относительно лейбла?*/
+
 .feedback__label--check::before {
   content: "";
   display: inline-block;
@@ -162,23 +170,23 @@
   background-color: #f2f2f2;
 }
 
-.feedback__check:checked+.feedback__label--check::after {
+.feedback__check:checked + .feedback__label--check::after {
   content: "";
   display: inline-block;
   position: absolute;
   background: url("../img/icon-tick.svg") no-repeat;
   top: 13px;
   transform: translateY(-50%);
-  left: Calc(-80px+17px);
+  left: calc(17px - 80px);
   width: 24px;
   height: 17px;
 }
 
-.feedback__check:hover+.feedback__label--check::before {
+.feedback__check:hover + .feedback__label--check::before {
   background-color: #e5e5e5;
 }
 
-.feedback__check:active+.feedback__label--check::before {
+.feedback__check:active + .feedback__label--check::before {
   background-color: #d5d5d5;
 }
 
