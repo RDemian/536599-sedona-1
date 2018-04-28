@@ -4,3 +4,26 @@
   justify-content: flex-start;
   align-items: center;
 }
+
+@media (min-width: @tablet-width) {
+  .page-main {
+    padding: 60px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .page-main--no-indent {
+    padding: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-main {
+    padding: 120px;
+  }
+
+  .page-main--no-indent {
+    padding: 120px;
+  }
+}

@@ -31,3 +31,75 @@
 .photo-block__count-like {
   font-weight: bold;
 }
+
+@media (min-width: @tablet-width) {
+  .photo-block {
+    width: 50%;
+    padding: 0;
+    border: none;
+  }
+
+  .photo-block:last-of-type {
+    border-bottom: none;
+  }
+
+  .photo-block:first-of-type {
+    width: 100%;
+    background-color: #f2f2f2;
+  }
+
+  .photo-block:nth-child(2n) .photo-block__description {
+    background-color: #f2f2f2;
+  }
+
+  .photo-block:nth-child(2n+1) .photo-block__description {
+    background-color: #eaeaea;
+  }
+
+  .photo-block__description {
+    position: relative;
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .photo-block__like-wrap {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+  }
+
+  .photo-block__title {
+    font-size: 14px;
+  }
+
+  .photo-block__author {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photo-block {
+    position: relative;
+    width: 33.3%;
+  }
+
+  .photo-block__description {
+    position: absolute;
+    bottom: 0;
+    color: red;
+  }
+
+  .photo-block:first-of-type {
+    width: 100%;
+    background-color: transparent;
+  }
+
+  .photo-block:nth-child(2n) .photo-block__description {
+    background-color: transparent;
+  }
+
+  .photo-block:nth-child(2n+1) .photo-block__description {
+    background-color: transparent;
+  }
+}
