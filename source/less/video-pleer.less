@@ -1,6 +1,6 @@
 .video-pleer__wrap {
   position: relative;
-  width: 320px;
+  /*width: 320px;*/
   height: 201px;
 }
 
@@ -44,12 +44,14 @@
   justify-content: flex-start;
   align-items: flex-start;
   padding-top: 24px;
-  width: 280px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin: 0 auto;
 }
 
 .video-pleer__replay {
-  background: url("../img/icon-video-replay.svg") no-repeat;
+  fill: #5c6870;
+  background-color: @block-color;
   padding: 0;
   width: 16px;
   height: 20px;
@@ -57,7 +59,8 @@
 }
 
 .video-pleer__subtit {
-  background: url("../img/icon-video-subtitles.svg") no-repeat;
+  fill: #5c6870;
+  background-color: @block-color;
   padding: 0;
   width: 32px;
   height: 20px;
@@ -66,9 +69,77 @@
 }
 
 .video-pleer__fullscr {
-  background: url("../img/icon-video-fullscreen.svg") no-repeat;
+  fill: #5c6870;
+  background-color: @block-color;
   padding: 0;
   width: 20px;
   height: 20px;
   margin-right: 25px;
+}
+
+@media (min-width: @tablet-width) {
+  .video-pleer {
+    width: 100%;
+    position: relative;
+  }
+
+  .video-pleer__wrap {
+    min-height: 500px;
+  }
+
+  .video-pleer__range {
+    width: 100%;
+    height: 93px;
+  }
+
+  .video-pleer__range::before {
+    margin: 45px 95px;
+    width: 390px;
+  }
+
+  .video-pleer__range::after {
+    margin: -52px 210px;
+  }
+
+  .video-pleer__control {
+    position: absolute;
+    width: 100%;
+    bottom: 38px;
+    padding-left: 10px;
+  }
+
+  .video-pleer__replay {
+    fill: @block-color;
+    background-color: transparent;
+    padding: 0;
+    width: 16px;
+    height: 20px;
+    margin-left: 25px;
+  }
+
+  .video-pleer__subtit {
+    fill: @block-color;
+    background-color: transparent;
+    padding: 0;
+    width: 32px;
+    height: 20px;
+    margin-left: auto;
+    margin-right: 30px;
+  }
+
+  .video-pleer__fullscr {
+    fill: @block-color;
+    background-color: transparent;
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    margin-right: 25px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .video-pleer {
+    width: 800px;
+    margin: 0 auto;
+  }
 }

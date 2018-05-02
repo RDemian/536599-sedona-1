@@ -23,10 +23,6 @@
   margin-bottom: 20px;
 }
 
-.info-picture {
-  line-height: 0;
-}
-
 .inform--benefit {
   padding-left: 70px;
   text-align: left;
@@ -58,4 +54,43 @@
 
 .inform--grey:not(:last-of-type) {
   border-bottom: 1px solid #d6d6d6;
+}
+
+@media (min-width: @tablet-width) {
+  .inform {
+    width: 33.3%;
+    padding: 20px 45px 25px;
+  }
+
+  .inform__title {
+    padding: 0 25px;
+  }
+
+  .inform--benefit {
+    padding: 155px 45px 40px;
+    text-align: center;
+  }
+
+  .inform--icon--house {
+    background: url("../img/icon-house.svg") no-repeat;
+    background-size: 75px 75px;
+    background-position: center 55px;
+  }
+
+  .inform--icon--gift {
+    order: 3;
+    background: url("../img/icon-gift.svg") no-repeat;
+    background-size: 75px 75px;
+    background-position: center 55px;
+  }
+
+  .inform--icon--food {
+    background: url("../img/icon-burger.svg") no-repeat;
+    background-size: 75px 75px;
+    background-position: center 55px;
+  }
+
+  .inform--grey:not(:last-of-type) {
+    border-bottom: none;
+  }
 }

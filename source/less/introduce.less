@@ -8,12 +8,10 @@
 .introduce__title {
   font-size: 18px;
   line-height: 26px;
-  max-width: 280px;
   padding: 0 10px;
 }
 
 .introduce__text {
-  max-width: 280px;
   padding: 0 10px;
 }
 
@@ -23,4 +21,25 @@
   font-weight: bold;
   text-transform: uppercase;
   width: 100%;
+}
+
+@media (min-width: @tablet-width) {
+  .introduce {
+    width: 100%;
+    padding: 70px 60px;
+  }
+
+  .introduce__title {
+    margin: 0 auto;
+    margin-bottom: 22px;
+    font-size: 21px;
+    line-height: 26px;
+  }
+
+  .introduce__text {
+    width: 450px;
+    margin: 0 auto;
+    font-size: 14px;
+    line-height: 26px;
+  }
 }

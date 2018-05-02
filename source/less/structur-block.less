@@ -25,3 +25,19 @@
   background-color: #eeeeee;
   padding: 0 20px;
 }
+
+@media (min-width: @tablet-width) {
+  .structur-block {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    min-height: 255px;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .structur-block--triangle {
+    padding-top: 0;
+    background-image: none;
+  }
+}
