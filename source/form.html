@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Sedona</title>
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
@@ -15,7 +16,7 @@
         <div class="site-nav__item">
           <a class="site-nav__link" href="index.html">Главная</a>
           <button class="menu-btn menu-btn--close">Скрыть меню
-            <svg width="22.199" height="22.199" fill="#fff"><path d="M22.199 2.804L19.396 0 11.1 8.297 2.804 0 0 2.803 8.297 11.1 0 19.396l2.803 2.803 8.297-8.297 8.296 8.297 2.803-2.803-8.296-8.296z"/></svg>
+            <svg class="menu-btn__picture--close" width="22.199" height="22.199"><path d="M22.199 2.804L19.396 0 11.1 8.297 2.804 0 0 2.803 8.297 11.1 0 19.396l2.803 2.803 8.297-8.297 8.296 8.297 2.803-2.803-8.296-8.296z"/></svg>
           </button>
         </div>
         <div class="site-nav__item"><a class="site-nav__link" href="photo.html">Фото и видео</a></div>
@@ -23,7 +24,11 @@
         <div class="site-nav__item"><a class="site-nav__link" href="https://htmlacademy.ru/intensive/adaptive">Html academy</a></div>
       </nav>
       <a class="main-logo" href="index.html">Логотип
-        <img class="main-logo__img" src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Седона логотип">
+        <picture class="main-logo__img">
+          <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+          <img src="img/logo-sedona-mobile.svg" alt="Седона логотип">
+        </picture>
       </a>
       <button class="menu-btn">Показать меню
         <svg class="menu-btn__picture" width="22.928px" height="21.982px">
