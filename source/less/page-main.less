@@ -5,25 +5,32 @@
   align-items: center;
 }
 
+.page-main--form-padding {
+  padding: 0;
+}
+
 @media (min-width: @tablet-width) {
   .page-main {
-    padding: 60px;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
   }
 
-  .page-main--no-indent {
-    padding: 0;
+  .page-main--photo-padding {
+    padding: 0 60px;
+  }
+
+  .page-main--form-padding {
+    padding: 0 60px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .page-main {
-    padding: 100px;
+  .page-main--form-padding {
+    padding: 0 120px;
   }
 
-  .page-main--no-indent {
+  .page-main--photo-padding {
     padding: 0;
   }
 }

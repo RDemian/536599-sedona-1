@@ -44,11 +44,11 @@
       <h2 class="visible-hidden">Добро пожаловать в Седону</h2>
       <div class="banner__title">Sedona</div>
     </section>
-    <main class="page-main">
+    <main class="page-main page-main--form-padding">
       <h1 class="visible-hidden">Форма отзыва</h1>
-      <section class="introduce">
-        <h2 class="introduce__title">Оставьте свой отзыв</h2>
-        <p class="introduce__text">Помогите нашим оелям стать лучше! Оставьте отзыв о них, а&nbsp;также&nbsp;о посещенных вами достопримечательностях</p>
+      <section class="introduce introduce--form-top">
+        <h2 class="introduce__title introduce__title--form">Оставьте свой отзыв</h2>
+        <p class="introduce__text introduce__text--form">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а&nbsp;также&nbsp;о посещенных вами достопримечательностях</p>
       </section>
       <form class="feedback" action="https://echo.htmlacademy.ru" method="post">
         <fieldset class="feedback__item feedback__item--fio">
@@ -69,7 +69,7 @@
           </ul>
         </fieldset>
         <fieldset class="feedback__item feedback__item--contacts">
-          <legend class="feedback__title">Контактная информация:</legend>
+          <legend class="feedback__title feedback__title--center">Контактная информация:</legend>
           <ul class="feedback__list">
             <li class="feedback__list-item feedback__list-item--contacts">
               <label class="feedback__label feedback__label--contacts" for="contacts-phone">Контактный телефон*:</label>
@@ -84,56 +84,56 @@
         <fieldset class="feedback__item feedback__item--impression">
           <legend class="feedback__title">Ваше общее впечатление:</legend>
           <ul class="feedback__list">
-            <li class="feedback__list-item">
+            <li class="feedback__list-item feedback__list-item--impression">
               <input class="feedback__radio" type="radio" id="impression-positive" name="impression" value="positive" checked>
-              <label class="feedback__label feedback__label--radio" for="impression-positive"><span>Скорее положительное</span></label>
+              <label class="feedback__label feedback__label--impression" for="impression-positive"><span>Скорее положительное</span></label>
             </li>
-            <li class="feedback__list-item">
+            <li class="feedback__list-item feedback__list-item--impression">
               <input class="feedback__radio" type="radio" id="impression-negative" name="impression" value="negative">
-              <label class="feedback__label feedback__label--radio" for="impression-negative">Скорее отрицательное</label>
+              <label class="feedback__label feedback__label--impression" for="impression-negative">Скорее отрицательное</label>
             </li>
-            <li class="feedback__list-item">
+            <li class="feedback__list-item feedback__list-item--impression">
               <input class="feedback__radio" type="radio" id="impression-indefinite" name="impression" value="indefinite">
-              <label class="feedback__label feedback__label--radio" for="impression-indefinite">Затрудняюсь ответить</label>
+              <label class="feedback__label feedback__label--impression" for="impression-indefinite">Затрудняюсь ответить</label>
             </li>
           </ul>
         </fieldset>
         <fieldset class="feedback__item feedback__item--sights">
-          <legend class="feedback__title">Посещенные достопримечательности:</legend>
+          <legend class="feedback__title feedback__title--center">Посещенные достопримечательности:</legend>
           <ul class="feedback__list">
             <li class="feedback__list-item">
               <input class="feedback__check" type="checkbox" id="devil-check" checked>
-              <label class="feedback__label feedback__label--check" for="devil-check">Мост Дьявола</label>
+              <label class="feedback__label feedback__label--sigths" for="devil-check">Мост Дьявола</label>
             </li>
             <li class="feedback__list-item">
               <input class="feedback__check" type="checkbox" id="bell-check" checked>
-              <label class="feedback__label feedback__label--check" for="bell-check">Гора-Колокол</label>
+              <label class="feedback__label feedback__label--sigths" for="bell-check">Гора-Колокол</label>
               <li class="feedback__list-item">
                 <input class="feedback__check" type="checkbox" id="slide-check" checked>
-                <label class="feedback__label feedback__label--check" for="slide-check">Слайд-парк</label>
+                <label class="feedback__label feedback__label--sigths" for="slide-check">Слайд-парк</label>
               </li>
               <li class="feedback__list-item">
                 <input class="feedback__check" type="checkbox" id="red-check">
-                <label class="feedback__label feedback__label--check" for="red-check">Красные скалы</label>
+                <label class="feedback__label feedback__label--sigths" for="red-check">Красные скалы</label>
               </li>
           </ul>
         </fieldset>
         <fieldset class="feedback__item feedback__item--emotions">
-          <legend class="feedback__title">Опишите свои эмоции:</legend>
+          <legend class="feedback__title feedback__title--center">Опишите свои эмоции:</legend>
           <textarea class="feedback__textarea" rows="4" placeholder="Опишите подробно все свои восторги"></textarea>
         </fieldset>
         <button type="submit" class="btn feedback__btn">Отправить отзыв</button>
         <span class="feedback__comment">* — обязательные поля</span>
       </form>
     </main>
-    <footer class="main-footer">
+    <footer class="main-footer main-footer--padding">
       <div class="hashtag-sedona">#Visitsedona</div>
-      <div class="social-buttons">
+      <div class="social-buttons main-footer__social-buttons">
         <a class="btn social-btn" href="#1"><img src="img/icon-twitter.svg" width="18" height="14" alt="twitter">twitter</a>
         <a class="btn social-btn" href="#1"><img src="img/icon-facebook.svg" width="9" height="18" alt="facebook">facebook</a>
         <a class="btn social-btn" href="#1"><img src="img/icon-youtube.svg" width="20" height="14" alt="youtube">youtube</a>
       </div>
-      <div class="copyright">
+      <div class="copyright main-footer__copyright">
         <span class="copyright__text">Разработано</span>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">htmlacademy.ru</a>
       </div>
