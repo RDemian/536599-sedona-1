@@ -200,6 +200,7 @@
   left: calc(17px - 80px);
   width: 24px;
   height: 17px;
+  opacity: 0.3;
 }
 
 .feedback__check:hover + .feedback__label--sigths::before {
@@ -208,6 +209,10 @@
 
 .feedback__check:active + .feedback__label--sigths::before {
   background-color: #d5d5d5;
+}
+
+.feedback__check:active + .feedback__label--sigths::after {
+  opacity: 0.3;
 }
 
 .feedback__textarea {
