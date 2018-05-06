@@ -3,7 +3,8 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  padding: 22px 20px;
+  padding: 22px 20px 10px;
+  min-height: 415px;
   border-top: 1px solid #d6d6d6;
 }
 
@@ -11,12 +12,30 @@
   border-bottom: 1px solid #d6d6d6;
 }
 
+.photo-block__picture {
+  font-size: 0;
+  line-height: 0;
+}
+
+.photo-block__description {
+  padding-top: 18px;
+}
+
+.photo-block__title {
+  font-size: 14px;
+  line-height: 24px;
+  margin: 0;
+}
+
 .photo-block__author {
+  margin: 0;
+  margin-bottom: 10px;
   text-transform: none;
 }
 
 .photo-block__like-wrap {
   display: flex;
+  align-items: flex-end;
 }
 
 .photo-block__btn-like {
@@ -25,10 +44,12 @@
   background: url("../img/icon-like.svg") no-repeat;
   width: 22px;
   height: 20px;
-  margin-right: 15px;
+  padding: 0;
+  margin-right: 10px;
 }
 
 .photo-block__count-like {
+  line-height: 14px;
   font-weight: bold;
 }
 
@@ -36,6 +57,7 @@
   .photo-block {
     width: 50%;
     padding: 0;
+    min-height: 347px;
     border: none;
   }
 
@@ -45,7 +67,6 @@
 
   .photo-block:first-of-type {
     width: 100%;
-    background-color: #f2f2f2;
   }
 
   .photo-block:nth-child(2n) .photo-block__description {
@@ -56,25 +77,33 @@
     background-color: #eaeaea;
   }
 
+  .photo-block:first-of-type .photo-block__description {
+    background-color: #f2f2f2;
+  }
+
   .photo-block__description {
     position: relative;
     width: 100%;
-    padding: 0 20px;
+    min-height: 80px;
+    padding: 16px 20px 0;
   }
 
   .photo-block__like-wrap {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    right: 20px;
+    right: 0;
+    width: 85px;
   }
 
   .photo-block__title {
     font-size: 14px;
+    line-height: 24px;
   }
 
   .photo-block__author {
     font-size: 14px;
+    line-height: 24px;
   }
 }
 
@@ -82,24 +111,24 @@
   .photo-block {
     position: relative;
     width: 33.3%;
+    min-height: 269px;
   }
 
-  .photo-block__description {
+  .photo-block .photo-block__description {
     position: absolute;
     bottom: 0;
-    color: red;
+    color: #d6d6d6;
+  }
+
+  .photo-block:nth-child(2n) .photo-block__description {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .photo-block:nth-child(2n+1) .photo-block__description {
+    background-color: rgba(0, 0, 0, 0.3);
   }
 
   .photo-block:first-of-type {
     width: 100%;
-    background-color: transparent;
-  }
-
-  .photo-block:nth-child(2n) .photo-block__description {
-    background-color: transparent;
-  }
-
-  .photo-block:nth-child(2n+1) .photo-block__description {
-    background-color: transparent;
   }
 }

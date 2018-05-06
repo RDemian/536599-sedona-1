@@ -1,6 +1,9 @@
+.video-pleer {
+  margin-bottom: 38px;
+}
+
 .video-pleer__wrap {
   position: relative;
-  /*width: 320px;*/
   height: 201px;
 }
 
@@ -34,7 +37,7 @@
   display: block;
   width: 10px;
   height: 10px;
-  margin: -28px 40px;
+  margin: -28px 50px;
   background: url("../img/volume-slider.png") no-repeat;
   z-index: 15;
 }
@@ -43,24 +46,24 @@
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  padding-top: 24px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 24px 20px;
   margin: 0 auto;
+  width: 280px;
+  background-color: @body-color;
 }
 
 .video-pleer__replay {
   fill: #5c6870;
-  background-color: @block-color;
+  background-color: @body-color;
   padding: 0;
   width: 16px;
   height: 20px;
-  margin-left: 25px;
+  margin-left: 5px;
 }
 
 .video-pleer__subtit {
   fill: #5c6870;
-  background-color: @block-color;
+  background-color: @body-color;
   padding: 0;
   width: 32px;
   height: 20px;
@@ -70,16 +73,17 @@
 
 .video-pleer__fullscr {
   fill: #5c6870;
-  background-color: @block-color;
+  background-color: @body-color;
   padding: 0;
   width: 20px;
   height: 20px;
-  margin-right: 25px;
+  margin-right: 5px;
 }
 
 @media (min-width: @tablet-width) {
   .video-pleer {
     width: 100%;
+    /*margin-bottom: 35px;*/
     position: relative;
   }
 
@@ -104,8 +108,9 @@
   .video-pleer__control {
     position: absolute;
     width: 100%;
-    bottom: 38px;
+    bottom: 15px;
     padding-left: 10px;
+    background-color: transparent;
   }
 
   .video-pleer__replay {
@@ -141,5 +146,10 @@
   .video-pleer {
     width: 800px;
     margin: 0 auto;
+    margin-bottom: 85px;
+  }
+
+  .video-pleer__range::before {
+    width: 545px;
   }
 }
