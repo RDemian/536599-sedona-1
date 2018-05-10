@@ -1,17 +1,36 @@
 .btn {
-  .no-outline;
-  padding: 18px 0;
-  background-color: @button-color;
-  font-family: inherit;
-  color: @button-font-color;
-  text-align: center;
+  display: block;
+  outline: none;
+  border: none;
   cursor: pointer;
 }
 
-.btn:hover {
+.btn--text {
+  background-color: @button-color;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: inherit;
+  color: @button-font-color;
+  font-weight: bold;
+}
+
+.btn--text:hover,
+.btn--text:focus {
   background-color: #669ec0;
 }
 
-.btn:disabled {
+.btn--text:active {
+  background-color: #5496bd;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.btn--text:disabled {
   background-color: #e5e5e5;
+}
+
+.btn--img {
+  padding: 0;
+  background-color: transparent;
+  font-size: 0;
 }

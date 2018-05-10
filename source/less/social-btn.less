@@ -2,7 +2,31 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 18px 0;
+  background-color: @button-color;
   font-size: 0;
   width: 46px;
   height: 48px;
+}
+
+.social-btn:hover,
+.social-btn:focus {
+  background-color: #669ec0;
+}
+
+.social-btn:active {
+  background-color: #5496bd;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.social-btn:disabled {
+  background-color: #e5e5e5;
+}
+
+.social-btn svg {
+  fill: #ffffff;
+}
+
+.social-btn:active svg {
+  fill: rgba(255, 255, 255, 0.3);
 }
