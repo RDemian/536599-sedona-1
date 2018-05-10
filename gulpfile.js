@@ -7,6 +7,18 @@ var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
 
+var rename = require("gulp-rename");
+var svgstore = require("gulp-svgstore");
+
+gulp.task("sprite", function() {
+  return gulp.src("source/img/icon-*.svg")
+    .pipe(svgstore({
+      inlineSvg: true
+    }))
+    .pipe(rename("sprite.svg"))
+    .pipe(gulp.dest("source/img"));
+});
+
 gulp.task("style", function() {
   gulp.src("source/less/style.less")
     .pipe(plumber())

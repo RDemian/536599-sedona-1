@@ -4,10 +4,17 @@
 }
 
 .copyright__link {
-  margin-left: 5px;
+  .no-outline;
+  margin-left: 12px;
   font-size: 0;
-  background: url("../img/htmlacademy.svg") no-repeat;
-  background-size: contain;
-  width: 40px;
-  height: 40px;
+  line-height: 0;
+}
+
+.copyright__link:hover svg,
+.copyright__link:focus svg {
+  fill: #81b3d2;
+}
+
+.copyright__link:active svg {
+  fill: #b2b2b2;
 }

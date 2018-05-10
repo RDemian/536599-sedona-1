@@ -18,12 +18,15 @@
 }
 
 .photo-block__description {
+  display: flex;
+  flex-direction: column;
   padding-top: 18px;
 }
 
 .photo-block__title {
   font-size: 14px;
   line-height: 24px;
+  font-weight: bold;
   margin: 0;
 }
 
@@ -31,6 +34,7 @@
   margin: 0;
   margin-bottom: 10px;
   text-transform: none;
+  color: #333333;
 }
 
 .photo-block__like-wrap {
@@ -39,13 +43,14 @@
 }
 
 .photo-block__btn-like {
-  font-size: 0;
-  line-height: 0;
-  background: url("../img/icon-like.svg") no-repeat;
-  width: 22px;
-  height: 20px;
+  fill: #b2b2b2;
   padding: 0;
   margin-right: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 0;
+  line-height: 0;
+  background-color: transparent;
 }
 
 .photo-block__count-like {
@@ -83,17 +88,12 @@
 
   .photo-block__description {
     position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
     width: 100%;
     min-height: 80px;
     padding: 16px 20px 0;
-  }
-
-  .photo-block__like-wrap {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 0;
-    width: 85px;
   }
 
   .photo-block__title {
@@ -105,19 +105,23 @@
     font-size: 14px;
     line-height: 24px;
   }
+
+  .photo-block__like-wrap {
+    width: 65px;
+    margin-top: 10px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .photo-block {
     position: relative;
     width: 33.3%;
-    min-height: 269px;
+    min-height: 267px;
   }
 
-  .photo-block .photo-block__description {
+  .photo-block__description {
     position: absolute;
     bottom: 0;
-    color: #d6d6d6;
   }
 
   .photo-block:nth-child(2n) .photo-block__description {
@@ -130,5 +134,15 @@
 
   .photo-block:first-of-type {
     width: 100%;
+  }
+
+  .photo-block__title,
+  .photo-block__author,
+  .photo-block__count-like {
+    color: #ffffff;
+  }
+
+  .photo-block__btn-like {
+    fill: #ffffff;
   }
 }
