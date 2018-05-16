@@ -17,6 +17,10 @@ var map = document.getElementById("map");
 var btnOpen = document.querySelector(".menu-btn--open");
 var btnClose = document.querySelector(".menu-btn--close");
 var siteNav = document.querySelector(".site-nav");
+var failurePopUp = document.querySelector(".alert--failure");
+var successPopUp = document.querySelector(".alert--success");
+var feedbackForm = document.querySelector(".feedback");
+
 
 if (map) {
   map.classList.remove("map--no-js");

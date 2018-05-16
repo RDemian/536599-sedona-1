@@ -88,10 +88,14 @@ gulp.task("serve", function() {
   });
 
   gulp.watch("source/less/**/*.less", ["style"]);
-  gulp.watch("source/*.html",["html-include"]);
+  gulp.watch("source/*.html",["html-include"]).on("change", server.reload);
   //gulp.watch("source/*.html").on("change", server.reload);
 });
 
 gulp.task("build", function(done){
   run("clean-build", "copy", "style", "images", "webp", "sprite", "html-include", done);
+});
+
+gulp.task("build-dev", function(done){
+  run("style", "html-include", done);
 });

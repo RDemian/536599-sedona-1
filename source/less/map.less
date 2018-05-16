@@ -2,8 +2,12 @@
   position: relative;
   width: 100%;
   min-height: 350px;
+  background-color: #f3f1ed;
   background: url("../img/bg-map-mobile@1x.jpg") no-repeat;
   background-position: center;
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background: url("../img/bg-map-mobile@2x.jpg") no-repeat;
+  }
 }
 
 .map--no-js::after {
